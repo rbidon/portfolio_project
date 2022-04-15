@@ -1,34 +1,146 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Portfolio</title>
+    <title>Rousse Bidon</title>
+    <!-- page icon/tab icon -->
+    <link rel="icon" type="image/jpg" href="#">
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="resources/css/style.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- JS link for icons -->
+    <script src="https://kit.fontawesome.com/ace15df57b.js" crossorigin="anonymous"></script>
+  <style>
+  </style>
   </head>
   <body>
-      <nav>
-
-      </nav> 
+    <!-- header section -->
+    <header class="header"> 
+      <!-- Navbar section -->
+      <nav class="navbar">
+        <div class="logo">
+          <a class="icon nav-links" href="./index.html">Rousse B.</a>
+        </div>
+        <ul class ="nav-links" id="navLink">
+          <li class="nav-item">
+            <a href="#">Project</a>
+          </li>
+          <li class="nav-item">
+            <a href="./aboutme.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a href="#">Resume</a>
+          </li>
+        </ul> 
+        <!-- navbar icon -->
+        <div class="burger" id="toggleButton">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+      </header>
       <main>
+        <!-- Introduce Section -->
+      <section class="introduce-section "> 
       <div class="container aboutme">
-
+        <div class="circle">
+        <div class="introduce-part">
+          <h2 class="intro-heading" >Hi, I'm <span style="color:rgba(255, 153, 0, 0.596)">Rousse.</span> <br> I am a <span style="color:rgba(255, 153, 0, 0.596)">front-end developer & ux designer </span> based in fort lauderdale, florida with a passionate for accessibility and creating usable digital products. </h2>
+        </div>
       </div>
-      <div class="container projects"></div>
-      <div class="container contactme"></div>
+       
+        <div class="learnmore">
+          <a href="#" class="btn"id="learn-morebutton" role="button">Learn More</a>
+        </div>
+      </div>
+    </section>  
+    <!-- Project Section -->
+      <section class="portifolo-section">
+      <div class="container">
+       <div class="project-title-description">
+        <h2 class="projects-title">Project</h2>
+        <p class='project-description' style="text-align:center;">Creating is my passion project and I want to show it with you </p> 
+       </div>
+       <div class="project-tabs">
+         <ul>
+           <li data-tab-target="#frontend">Frontend Projects</li>
+           <li data-tab-target="#ux">UX Projects</li>
+         </ul>
+       </div>
+       <div class="project-tab-content">
+         <div class="frontend-content">
+           <h4>Frontend Projects</h4>
+           <p>This is where i'll put my frontend project contents</p>
+         </div>
+         <div class="ux-content">
+          <h4>UX Projects</h4>
+          <p>This is where i'll put my ux project contents</p>
+        </div>
+       </div>
+       </div>
+  
+    </section>
+    
+    <!-- Contact Section -->
+    <section class="contactme-section">
+       <div class="container justify-content-center">
+      <div class="contactme rounded-pill text-center">
+        <h2>Contact Me</h2>
+      </div>
+      <form>
+        <div class="form-row">
+          <div class="form-group col">
+            <label for="firstname" class="col-form-label ">First Name</label>
+            <input type="text" class="form-control" id="firstname" placeholder="First Name">
+          </div>
+          <div class="form-group col">
+            <label for="lastname" class="col-form-label">Last Name</label>
+            <input type="password" class="form-control" id="lastname" placeholder="Last Name">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="emailaddress"class="col-form-label">Email</label>
+          <input type="email" class="form-control" id="emailaddress" placeholder="Email Address">
+        </div>
+        <div class="form-group">
+          <label for="yourmessage" class="col-form-label">Your Message</label>
+          <textarea class="form-control" id="yourmessage" rows="4"></textarea>
+        </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      </div> 
+    </div>
+    </section>
+      
      </main>
+     
+    
       <!-- JS link -->
-      <script type="text/javascript" src="/resources/js/script.js"></script>
+    <script src="./resources/js/script.js" defer></script>
+    <!-- defer allows the js to happen after html is loaded -->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <footer>
-
+    <footer id="footer">
+      <div class="socialmedia" id="socialmedia">
+        <ul>
+          <li><a href="https://github.com/rbidon" target="__blank"> <i class="fa-brands fa-github fa-xl"></i></a></li>
+        <li> <a href="https://www.linkedin.com/in/roussebidon/" target="__blank"> <i class="fa-brands fa-linkedin fa-xl	"></i></a></li>
+        <li><a href="https://twitter.com/roussevcodes" target="__blank"> <i class="fa-brands fa-twitter fa-xl	"></i></a></li>
+        </ul>
+        
+      </div>
+      <br>
+      <p class="text-center">Copyright <span>&#169;</span>  2022 Rousse Bidon</p>
     </footer>
   </body>
 </html>
