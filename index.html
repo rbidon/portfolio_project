@@ -19,6 +19,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
   <style>
   </style>
   </head>
@@ -33,13 +36,13 @@
         </div>
         <ul class ="nav-links" id="navLink">
           <li class="nav-item">
-            <a href="#">Project</a>
+            <a href="#portifolo-section"">Project</a>
           </li>
           <li class="nav-item">
             <a href="./aboutme.html">About</a>
           </li>
           <li class="nav-item">
-            <a href="#">Contact</a>
+            <a href="#contactme-section">Contact</a>
           </li>
           <li class="nav-item">
             <a href="#">Resume</a>
@@ -57,11 +60,16 @@
         <!-- Introduce Section -->
       <section class="introduce-section "> 
       <div class="container aboutme">
-        <div class="circle">
         <div class="introduce-part">
+          <div class="circle"></div>
           <h2 class="intro-heading" >Hi, I'm <span style="color:rgba(255, 153, 0, 0.596)">Rousse.</span> <br> I am a <span style="color:rgba(255, 153, 0, 0.596)">front-end developer & ux designer </span> based in fort lauderdale, florida with a passionate for accessibility and creating usable digital products. </h2>
         </div>
-      </div>
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="circle3"></div>
+        <div class="circle4"></div>
+        
+     
        
         <div class="learnmore">
           <a href="#" class="btn"id="learn-morebutton" role="button">Learn More</a>
@@ -69,7 +77,7 @@
       </div>
     </section>  
     <!-- Project Section -->
-      <section class="portifolo-section">
+      <section class="portifolo-section" id="portifolo-section"">
       <div class="container">
        <div class="project-title-description">
         <h2 class="projects-title">Projects</h2>
@@ -143,28 +151,7 @@
               </div>
             <br>
             </div>
-           
             </div>
-             <!-- <img src="./resources/images/pw geneator.png" class="portifolo_demo_image" alt="Password Generator">
-            
-               
-               <div class="portifolo_data">
-                 <h3 class="portifolo_title" style="text-align:center;margin: 10px;
-                 padding: 5px;"> Password Generator</h3>
-                 <p class="portifolo_description" >During the program I had the pleasure of creating a password generator. Giving you randomize password up to 15 characters.</p>
-                 <h4 class="portifolo_tech-title" style='margin: 10px;
-                 padding: 5px;'>Language Used</h4>
-                 <ul class="portifolo_tech-list">
-                   <li class="starter-list">HTML </li>
-                   <li class="starter-list"> <span><i class="fa-solid fa-circle fa-2xs circleicon"> </i></span>CSS</li>
-                   <li class="starter-list"><span><i class="fa-solid fa-circle fa-2xs circleicon""></i></span>JavaScript</li>
-                   <li class="starter-list"><span><i class="fa-solid fa-circle fa-2xs circleicon""></i></span>Bootstrap</li>
-                 </ul>
-                 <div class="portifolo-button">
-                  <a class="btn btn-portifolo" id="btn-portifolo" target="'_blank"  href="https://github.com/rbidon/review-project" role="button">Github Link</a>
-                  <a class="btn btn-portifolo" id="btn-portifolo" target="'_blank" href="https://rbidon.github.io/review-project" role="button">Deploy Website</a>
-                 </div>
-               </div> -->
              </div>
             </div>
               <div class ='content' id="uxdesign">UX Testing
@@ -177,76 +164,72 @@
     <!-- =============================CONTACT=================================== -->
     <!-- Contact Section -->
     <!-- Create form that send to my email -->
-    <section class="contactme-section">
+    <section class="contactme-section" id="contactme-section">
        <div class="container">
-        <h2 class="contactme-title">Contact Me</h2>
+        <h3 class="contactme-title">Contact Me</h3>
         <p class='contactme-description' style="text-align:center;">Want to tell me why the sky is blue or anything? </p>
         <div class="contactme-container">
-          <div class="contact-information">
+          <!-- <div class="contact-information">
+            
             <div class="emailinformation"> 
-              <h3>Email</h3>
+              <i class="fa-regular fa-envelope fa-2x" style="margin:5px;"></i>
+              <div>
+                <h3>Email</h3>
               <span>roussebidon@gmail.com</span>
+              </div>
             </div>
-          </div>
+            <div class="emailinformation"> 
+              <i class="fa-solid fa-location-dot fa-2x" style="margin:5px;"></i>
+              <div>
+                <h3>Location</h3>
+              <span>Fort Lauderdale, Florida</span>
+              </div>
+            </div>
+          </div> -->
           <div class="contactform"> 
-          <form  action="https://formsubmit.co/roussebidon@gmail.com" method="POST">
-            <!-- Thank you page when form is submitted -->
-            <input type="hidden" name="_next" value="https://roussevbidon.com/thankyou.html">
+          <form  action="https://formsubmit.co/372ce97b7692e4a4607f41d76ffe3262" method="POST">
+            <!-- Thank you page when form is submitted
+            <input type="hidden" name="_next" value="https://roussevbidon.com/thankyou.html"> -->
             <!-- Subject when I recieve an form submission -->
             <input type="hidden" name="_subject" value="New submission!">
             <!-- Auto Repsonse when a form is submitted -->
             <input type="hidden" name="_autoresponse" value="Thanks for submission, I will get back to you soon.">
             <!--Avoid Spams--- Use Honey  -->
             <input type="text" name="_honey" style="display:none">
-            <!-- First Name -->
+            <!-- Full Name -->
           <div class="row">
               <div class="input-group">
-             <input type="text"  id="fname" required>
-              <label for="fname" class="contact_label"><i class="fa-solid fa-user"></i> First Name</label>
+             <input type="text"  id="fname" name="name" required>
+              <label for="fname" class="contact_label"><i class="fa-solid fa-user"></i> Full Name</label>
             </div>
-            <!-- Last Name -->
-            <div class="input-group ">
-              <input type="text" id="lname" required>
-              <label for="lname" class="contact_label"> <i class="fa-solid fa-user"></i> Last Name</label>
-            </div>
+            <!-- Phone Number -->
+            <div class="input-group">
+              <input type="tel"  id="phone" name="phone" required>
+               <label for="phone" class="contact_label"><i class="fa-solid fa-phone"></i> Phone No.</label>
+             </div>
           </div>
           <!-- Email Address -->
           <div class="input-group">
-            <input type="text"  id="emailaddress" class="email-message" required>
+            <input type="text"  id="emailaddress" class="email-message" name="email" required>
             <label for="emailaddress" class="contact_label email-message"> <i class="fa-solid fa-envelope"></i> Email Address</label>
           </div>  
             
            
           <!-- Message -->
           <div class="input-group">
-           
-            <textarea name='message'rows="8" id="message" required></textarea> 
+            <textarea name="message"rows="8" id="message" required></textarea> 
             <label id="message" for="message" class="contact_label"> <i class="fa-solid fa-comments"></i> Your Message</label>
           </div>
-           <div class="g-recaptcha captcha_box" data-site-key="6Ld905YfAAAAALskWDDYbKN83bvW6e87ovW-MVKX"></div>
+           <!-- <div class="g-recaptcha captcha_box" data-site-key="6Ld905YfAAAAALskWDDYbKN83bvW6e87ovW-MVKX"></div> -->
           <!-- Button Submit -->
             <!-- <input type="submit" value='Submit' id="submit"> -->
             <div class="button-group">
-              <button class="resetbtn" type='reset'>Reset</button>
-              <button class="submitbtn" type='submit'>Submit</button>
+              <button class="submitbtn" type='submit'>Submit  <i class="fa-solid fa-paper-plane"></i></button>
             </div>
       </div>
         </form>
       </div>
-        <!-- <form class="contactform" action="https://formsubmit.co/roussebidon@gmail.com" method="POST" name="sendForm"> -->
-          <!-- Subject I will see when they send an email from my form -->
-          <!-- <input type="hidden" name="_subject" value="New Email from website!">
-          <input type="text" name="name" placeholder='Name'required>
-          <input type="email" name="email" placeholder='Email Address'required>
-          <input type="text" name="message" placeholder='Message' required>"
-          <button type="submit">Send</button> -->
-          <!-- Personalized Thank you page -->
-          <!-- <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
-        </form> -->
-        <!-- <a class="btn btn-contactme" id="btn-contactme" target="'_blank"  href="mailto:roussebidon@gmail.com" role="button">Github Link</a>
-      </div> -->
     </section>
-      
      </main>
      <!-- ======================FOOTER========================= -->
   <footer id="footer">
@@ -261,10 +244,10 @@
       <br>
       <p class="text-center">Copyright <span>&#169;</span>  2022 Rousse Bidon</p>
   </footer>
+  <!-- ===================== SCROLL UP Button ================ -->
   <!-- /* hide the button to show icon when scrolling */ -->
   <button class="scroll-up" id="btnScrollToUp">
-    <i class="material-icons md-48" style=' margin-top: 20%;'>
-      arrow_upward
+    <i class="material-icons md-48" style=" margin-top: 20%;">
     </i>
   </button>
       <!-- JS link -->

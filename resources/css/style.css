@@ -3,10 +3,12 @@
 * {box-sizing:border-box;
     margin:0;
     padding:0;
+    
 }
 html, body {
     height: 100%;
     margin: 0;
+    overflow: auto;
   }
 /* .header{
     width: 100%;
@@ -99,16 +101,53 @@ height: 40px;
     }
     
 }
-/* Introduce section */
-.circle {
-    background-color: #F6E1E1;
+/* ==========================Introduce section =========================*/
+.circle{
+    background-color: #e6eaf8;
+    border-radius:50%;
+    width: 400px;
+    height: 400px; 
+    position: relative;
+}
+/* .circle1 {
+    background-color: #e6eaf8;
     border-radius:50%;
     width: 400px;
     height: 400px;
     margin: 0 auto;
     display:block;
-    
+    filter: blur(200px);
+    position: absolute;
+        bottom: 0;
+        left: 0;
+    z-index: -5;    
 }
+.circle2{
+    background-color: #ffd0e6;
+    border-radius:50%;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    display:block;
+    filter: blur(200px);
+    position: absolute;
+        top: 0;
+        right: 0;
+    z-index: -5;      
+}
+.circle3{
+    background-color: #ffd0e6;
+    border-radius:50%;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    display:block;
+    filter: blur(200px);
+    position: absolute;
+        top: 0;
+        right: 0;
+    z-index: -1;      
+} */
 /* blocking the link text  */
 /* .circle:after {
     content: " ";
@@ -119,7 +158,7 @@ height: 40px;
 } */
 
 .introduce-part {
-    position: relative;
+    position: static;
     text-align: center;
     font-size: 28px;
     font-family: "Helvetica Neue",nimbus,sans-serif;
@@ -128,6 +167,7 @@ height: 40px;
     white-space: pre-line;
     padding: 17px;
     text-transform: none;
+    background-color: transparent;
    
 }
 /* .intro-heading {
@@ -351,13 +391,12 @@ margin-left: 10px;
     /* box-shadow: 1px 3px 0px; */
     padding-top: 15px;
     font-size: 40px;
+    font-family: 'Questrial', sans-serif;
    
 }
 .contactme-container{
     display:flex;
-    flex-direction: row;
     flex: 1;
-    background-color: #f7f5c0;
     border-radius:5px;
     gap: 3rem;
     justify-content: space-evenly;
@@ -369,16 +408,23 @@ margin-left: 10px;
     background-color: #bce9c6;
     border-radius:5px;
     align-content:center;
+   
+}
+
+.emailinformation {
+     display:flex;
+    width:100%;
+    gap:2px;
+    padding: 1rem 0;
 }
 /*  Style Email Form */
-
 .contactform{
     display:flex;
     align-items:center;
     justify-content: center;
-    background-color: #F6E1E1;
+    background-color:#DEB3B3;
     width: 100%;
-    border-radius:20px; 
+    border-radius:30px; 
 }
 form{
     padding: 25px 30px;
@@ -410,12 +456,17 @@ label{
     cursor: text;
     transition: 0.2s;
 }
-
 input:focus~label, input:valid~label, textarea:focus~label, textarea:valid~ label{
     top: -35px;
     font-size: 14px;
 }
 
+input:focus {
+    border: 1px solid rgb(199, 239, 168);
+}
+textarea:focus {
+    border: 1px solid black;
+}
 .row{
     display:flex;
     align-items: center;
@@ -440,9 +491,9 @@ input:focus~label, input:valid~label, textarea:focus~label, textarea:valid~ labe
     .button-group{
         flex-direction:column;
     }
-    .resetbtn{
+    /* .resetbtn{
         width:100%;
-    }
+    } */
     .submitbtn{
         width:100%;
     }
@@ -456,24 +507,26 @@ display: flex;
 gap:5px;
 justify-content: flex-start;
 }
-.resetbtn{
+/* .resetbtn{
     min-width: 100px;
     cursor: pointer;
     padding:10px 0;
     color:#fff;
     outline:none;
     background:transparent;
-}
+} */
 .submitbtn{
-    min-width: 100px;
+    min-width: 200px;
     cursor: pointer;
     padding:10px 0;
-    border:1px solid rgb(6,6,6);
+    border:1px solid #fff;
     color:#fff;
     outline:none;
     background:transparent;
 }
-
+.submitbtn:active {
+    background-color:#F6E1E1;
+}
 /* =================================== FOOTER================================ */
 #footer {
     position: absolute;
