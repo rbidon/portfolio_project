@@ -4,7 +4,7 @@ const toggleButton = document.getElementById("toggleButton");
 const navLink = document.getElementById("navLink");
 toggleButton.addEventListener("click", () => {
     navLink.classList.toggle('active');
-})
+});
 
 // Project Section: tab
 // const tabs = document.querySelector(".wrapper");
@@ -35,30 +35,35 @@ tabsButtonWrapper.addEventListener('click', function(e) {
 });
 
 // Scroll Up button will show when scrolling 
-const showOnPx = 100;
-const btnScrollToUp = document.querySelector('#btnScrollToUp');
 
-const scrollContainer = () => {
-  return document.documentElement || document.body;
-}
+const btnScrollToUp = document.querySelector("#btnScrollToUp");
+// console.log(btnScrollToUp);
 
-document.addEventListener('scroll', function () {
-  if(scrollContainer().scrollTop > showOnPx) {
-    btnScrollToUp.style.display = 'block';
-  } else {
-    btnScrollToUp.style.display = 'none';
+document.addEventListener("scroll", scrollFunction);
+
+// Condition Statement
+function scrollFunction() {
+  if(window.pageXOffset > 300){
+    // show button
+    btnScrollToUp.style.display = "block";
   }
-})
-// Click on the scroll up button and will move to the top
-btnScrollToUp.addEventListener('click', function () {
-  // plain JS
-  // window.scrollTo(0, 0);
+  else{ //Hide button
+    btnScrollToUp.style.display = "none";
+  }
+};
+// window.addEventListener("scroll", function scrollFunction() {
+//   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+//     btnScrollToTop.style.display = "block";
+//   } else {
+//     btnScrollToTop.style.display = "none";
+//   }
+// });
 
-  window.scrollTo({
-    top:0,
-    left:0,
-    behavior:'smooth'
-  })
-  // JQuery- Not working
-  // $("html, body").animate({scrollTop: 0}, "slow");
-});
+// // When the user clicks on the button, scroll to the top of the document
+// btnScrollToTop.addEventListener("click", () => {
+//   window.scroll({
+//     top:0 ,
+//     left:0,
+//     behavior: "smooth"
+//   })
+// });
