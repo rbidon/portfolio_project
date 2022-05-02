@@ -9,7 +9,7 @@ html, body {
     height: 100%;
     margin: 0;
     overflow-x: hidden;
-    width:100;
+    /* scroll-behavior: smooth; */
   }
 /* .header{
     width: 100%;
@@ -22,6 +22,8 @@ html, body {
     display:flex;
     justify-content:space-around;
     align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
 }
 .nav-links {
     /* display:flex;
@@ -35,6 +37,7 @@ html, body {
 }
 .navbar a {
     color: #000000;
+    text-decoration: none;
   }
 
 
@@ -109,6 +112,7 @@ height: 40px;
     width: 400px;
     height: 400px; 
     position: relative;
+    margin:auto;
 }
 /* .circle1 {
     background-color: #e6eaf8;
@@ -157,7 +161,9 @@ height: 40px;
     position: relative;
     line-height:0;
 } */
-
+.introduce-section{
+    height:auto;
+}
 .introduce-part {
     position: static;
     text-align: center;
@@ -179,15 +185,22 @@ height: 40px;
     text-align: right;
     margin-bottom: 15px;
 }
+a:focus {
+    outline: none !important;
+}
 
 #learn-morebutton{   
 background-color:#DEB3B3;
 border-radius: 20px;
 
 }
+#learn-morebutton:link{
+text-decoration: none;
+}
 
 #learn-morebutton:hover{
 background-color: rgb(147, 38, 38);
+color:black;
 }
 
 
@@ -434,6 +447,9 @@ form{
     margin-top: 20px;
 }
 
+.placeicons{
+    font-family:'Font Awesome';
+}
 .input-group{
     margin-bottom: 30px;
     position:relative;
@@ -456,8 +472,9 @@ label{
     color: #fff;
     cursor: text;
     transition: 0.2s;
+    
 }
-input:focus~label, input:valid~label, textarea:focus~label, textarea:valid~ label{
+input:focus~label, input:valid~label, textarea:focus~label, textarea:valid~label{
     top: -35px;
     font-size: 14px;
 }
@@ -470,12 +487,13 @@ textarea:focus {
 }
 .row{
     display:flex;
-    align-items: center;
-    justify-content:space-evenly;
+    flex-direction: row;
+    /* align-items: center;
+    justify-content:space-around; */
     
 }
 .row .input-group{
-    flex-basis: 46%;
+    flex: 1;
 }
 
 @media screen and (max-width: 768px){
@@ -485,7 +503,7 @@ textarea:focus {
     .contactform .input-box{
         flex-direction: column;
     }
-    .input-group{
+    .row{
         flex-direction: column;
        
     }
@@ -499,7 +517,6 @@ textarea:focus {
         width:100%;
     }
 }
-
 
 /* Reset & Submit Button */
 .button-group{
@@ -538,6 +555,8 @@ justify-content: flex-start;
     position:static;    
     background-color:#F6E1E1;      
   }
+
+  /* =========================== SOCIAL MEDIA ICONS ======================================== */
   #socialmedia ul {
      /* list-style-type: none; */
      text-decoration: none;
@@ -566,8 +585,6 @@ justify-content: flex-start;
   #socialmedia ul li a {
       position:relative;
       display:block;
-
-      /* =====================================Scroll-Up Button==================================== */
       /* Where I can size the icon background */
       width:50px;
       height:50px;
@@ -578,7 +595,6 @@ justify-content: flex-start;
       box-shadow: 0 5px 4px rgb(160, 128, 128);
     /* Possible box shadow color */
       /* background-color: #F6E1E1; */
-
   }
 
   /* Hovering w. Social Media */
@@ -616,22 +632,22 @@ justify-content: flex-start;
       color: #000000;
   }
 
-
+/* ===================== SCROLL UP BUTTON ===================================== */
   /* Scroll Up Icon */
   #btnScrollToUp{
+       /* hide the button to show icon when scrolling */
+      display:none;
       background-color: #fbfbfb;
       border-radius: 50%;
       position: fixed;
       right:20px;
       bottom: 20px;
-      width:50px;
-      height:50px;
+      width:40px;
+      height:40px;
       box-shadow: 0 5px 4px rgb(160, 128, 128);
       outline: none;
       cursor: pointer;
-      border:none; 
-       /* hide the button to show icon when scrolling */
-       display:none;
+      border:none;  
   }
   
   /* Change color when click on it */
