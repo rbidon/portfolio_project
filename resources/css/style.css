@@ -107,11 +107,10 @@ height: 40px;
 }
 /* ==========================Introduce section =========================*/
 .circle{
-    background-color: #e6eaf8;
+    background-color: #F6E1E1;
     border-radius:50%;
     width: 400px;
     height: 400px; 
-    position: relative;
     margin:auto;
 }
 /* .circle1 {
@@ -162,10 +161,9 @@ height: 40px;
     line-height:0;
 } */
 .introduce-section{
-    height:auto;
+    height: auto;
 }
 .introduce-part {
-    position: static;
     text-align: center;
     font-size: 28px;
     font-family: "Helvetica Neue",nimbus,sans-serif;
@@ -175,16 +173,23 @@ height: 40px;
     padding: 17px;
     text-transform: none;
     background-color: transparent;
+    margin-top: 160px;
+
    
 }
-/* .intro-heading {
-    
+.intro-heading {
+   margin-bottom: -275px; 
 
-} */
-.learnmore{
-    text-align: right;
-    margin-bottom: 15px;
 }
+.learnmore{
+    /* text-align: right;
+    margin-bottom: 31px; */
+    text-align: right;
+    margin-bottom: 31px;
+    margin-left: -422px;
+    margin-top: -96px; 
+}
+
 a:focus {
     outline: none !important;
 }
@@ -192,18 +197,25 @@ a:focus {
 #learn-morebutton{   
 background-color:#DEB3B3;
 border-radius: 20px;
-
+/* width: 136px; */
 }
 #learn-morebutton:link{
 text-decoration: none;
 }
 
 #learn-morebutton:hover{
-background-color: rgb(147, 38, 38);
+background-color: #F6E1E1;
 color:black;
 }
-
-
+@media  screen and (max-width:765px){
+    .circle{
+        background-color: #F6E1E1;
+        border-radius:50%;
+        width: 300px;
+        height: 300px; 
+        margin:auto;
+    }  
+}
 /* ============================PROJECTS===================================== */
 /* Project-section */
 .portifolo-section {
@@ -305,10 +317,11 @@ letter-spacing: 3px;
    /* ============================Card Style===================================== */
 .card{
     flex:50;
-    border-radius: -200px;
     /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-    border-radius: 2.25rem;
+    border-top-left-radius: 30px; 
+     border-top-right-radius: 30px;
+    
 }
 .card-body{
     background-color: transparent;
@@ -316,7 +329,7 @@ letter-spacing: 3px;
 .portifolo_demo_image{
     width:auto;
     height:auto;
-    border-radius:20px;
+    /* border-radius: 2.25rem; */
 }
 
 .portifolo_data{
@@ -337,12 +350,14 @@ letter-spacing: 3px;
     margin: 10px;
     padding: 5px;
     font-size: 12px;
+    justify-content: center;
 }
 .starter-list{
     list-style-type: none;
     /* padding:.5rem; */
-    background-color: #eef4ff;
+    background-color: #eceff5;
     border-radius: 8px;
+    
 }
 .html{
     margin: 0 16px 0 0;
@@ -366,7 +381,7 @@ letter-spacing: 3px;
 }
 .portifolo-button{
      display:flex;
-    /* justify-content:center; */
+    justify-content:center;
     align-items:center; 
     width: auto;
     height:auto;
@@ -411,7 +426,7 @@ margin-left: 10px;
 .contactme-container{
     display:flex;
     flex: 1;
-    border-radius:5px;
+    /* border-radius:20px; */
     gap: 3rem;
     justify-content: space-evenly;
     align-content: center;
@@ -419,10 +434,10 @@ margin-left: 10px;
 }
 .contact-information{
     padding: 25px 30px;
-    background-color: #bce9c6;
-    border-radius:5px;
+    background-color: #F6E1E1;
+    border-radius:30px;
     align-content:center;
-   
+    height: 261px;
 }
 
 .emailinformation {
@@ -480,10 +495,10 @@ input:focus~label, input:valid~label, textarea:focus~label, textarea:valid~label
 }
 
 input:focus {
-    border: 1px solid rgb(199, 239, 168);
+    border: 1px solid #F6E1E1;
 }
 textarea:focus {
-    border: 1px solid black;
+    border: 1px solid #F6E1E1;
 }
 .row{
     display:flex;
