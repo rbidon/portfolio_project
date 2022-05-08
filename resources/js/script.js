@@ -1,4 +1,5 @@
 console.log("Working!");
+// =================================== NAVBAR ANIMATION =========================================
 // menu burger 
 const toggleButton = document.getElementById("toggleButton");
 const navLink = document.getElementById("navLink");
@@ -6,7 +7,7 @@ toggleButton.addEventListener("click", () => {
     navLink.classList.toggle('active');
 });
 
-// Project Section: tab
+// =========================== Project Section: tab =====================//
 // const tabs = document.querySelector(".wrapper");
 const tabButton = document.querySelectorAll(".tab-button");
 const tabsButtonWrapper = document.querySelector('.buttonWrapper')
@@ -34,36 +35,25 @@ tabsButtonWrapper.addEventListener('click', function(e) {
   element.classList.add("active");
 });
 
-// Scroll Up button will show when scrolling 
 
 const btnScrollToUp = document.querySelector("#btnScrollToUp");
 // console.log(btnScrollToUp);
 
-document.addEventListener("scroll", scrollFunction);
-
-// Condition Statement
-function scrollFunction() {
-  if(window.pageXOffset > 300){
-    // show button
+// Scroll Up button will show when scrolling 
+document.body.addEventListener("scroll", function() {
+  // console.log("Scroll"); ---- Working
+   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     btnScrollToUp.style.display = "block";
-  }
-  else{ //Hide button
+  } else {
     btnScrollToUp.style.display = "none";
   }
-};
-// window.addEventListener("scroll", function scrollFunction() {
-//   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-//     btnScrollToTop.style.display = "block";
-//   } else {
-//     btnScrollToTop.style.display = "none";
-//   }
-// });
+});
 
-// // When the user clicks on the button, scroll to the top of the document
-// btnScrollToTop.addEventListener("click", () => {
-//   window.scroll({
-//     top:0 ,
-//     left:0,
-//     behavior: "smooth"
-//   })
-// });
+// When the user clicks on the button, scroll to the top of the document
+btnScrollToUp.addEventListener('click', function() {
+  document.body.scrollTo({
+    top: 0,
+    left: 0, 
+    behavior:"smooth"
+  });
+});
