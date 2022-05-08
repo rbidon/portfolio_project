@@ -673,3 +673,40 @@ justify-content: flex-start;
   /* #btnScrollToUp:hover{
       background-color: #FBFFF1;
   } */
+
+
+
+  /* ====================== ABOUT ME PAGE============================== */
+  .cicle-square{
+      display:flex;
+      gap: 4em;
+      justify-content:center;
+  }
+  .square{
+      background-color: gray;
+    width: 400px;
+    height: 400px;
+  }
+  .circle-photo{
+    background-color: #F6E1E1;
+    border-radius:50%;
+    width: 400px;
+    height: 400px; 
+  }
+  .resume{
+      margin: 20px;
+      text-align: center;
+  }
+#resume-button{   
+    background-color:#F6E1E1;
+    border-radius: 20px;
+    width: 150px;
+    }
+    #resume-button:link{
+    text-decoration: none;
+    }
+    
+    #resume-button:hover{
+    background-color: #f9cfcf;
+    color:black;
+    }
