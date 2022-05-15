@@ -21,18 +21,18 @@
       <!-- Navbar section -->
       <nav class="navbar">
         <div class="logo">
-          <a class="icon nav-links" href="./index.html">Rousse B.</a>
+          <a class="icon nav-links" href="./index.html"><img class="icon" src="./resources/images/Logo.png"></a>
         </div>
-        <ul class ="nav-links" id="navLink">
+        <ul class ="nav-links navLink" id="navLink">
           <li class="nav-item">
-            <a href="#">Project</a>
+            <a href="/index.html#portifolo-section">Project</a>
           </li>
           <li class="nav-item">
             <a class ='aboutnav' style=" text-underline-offset: 0.2em;
             text-decoration:underline 0.15em rgb(0,0,0,0); color:#000000; text-decoration-color: rgb(0, 0, 0);" href="./aboutme.html">About</a>
           </li>
           <li class="nav-item">
-            <a href="#">Contact</a>
+            <a href="/index.html#contactme-section">Contact</a>
           </li>
           <li class="nav-item">
             <a href="#">Resume</a>
@@ -47,8 +47,47 @@
       </nav>
       </header>
       <main>
-        
+        <section class="aboutme-section">
+          <div class="container">
+            <div class="cicle-square">
+              <div class="photo-resume">
+                <div class="circle-photo"></div>
+                <div class="resume">
+                <a href="#" class="btn"id="resume-button" role="button">Resume</a>
+              </div>
+              </div>
+              <div class="square">
+                <h5 class="about-square">Hi again! My name is Rousse. <br> Nice to meet you!</h5>
+                <p>A techincal support specialist with a love for imprving user experience. </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Skills Section -->
+        <section class="skills-section">
+          <div class="skills-title">
+            <h3 class="skills">Skills</h3>
+          </div>
+          <div class="container">
+            <div class="skills-icons" style=" padding-top:30px;">
+              <img class="sicons" src="./resources/images/HTML5_Badge_512.png" alt="Html Icon"> 
+              <img class="sicons" src="./resources/images/css-512.webp" alt="CSS Icon">
+              <img class="sicons" src="./resources/images/javascript-icon-png-23.jpeg" alt="JS Icon">
+              <img class="sicons" src="./resources/images/bootstrap-226077.webp" alt="Bootstrap Icon">
+              <img class="sicons" src="./resources/images/node-js-nodejs-number-symbol-text-recycling-symbol-transparent-png-1383018.png" alt="Node Icon">
+              <img class="sicons" src="./resources/images/207-2073547_sql-server-icon-png-29-transparent-background-database.png" alt="SQL Icon">
+              <img class="sicons" src="./resources/images/postsql.png">
+              <img class="sicons" src="./resources/images/React-icon.svg.png">
+            </div>
+            <div class="skills-icons">
+              <img class="sicons" src="./resources/images/mongodb-5-1175140.webp">
+              <img class="sicons" src="./resources/images/figma.png" alt="Figma Icon">
+            </div>
+          </div>
+        </section>
+        <section class="otherfun"></section>
       </main>   
+      <!-- =======================FOOTER============================================= -->
        <footer id="footer">
       <div class="socialmedia" id="socialmedia">
         <ul>
@@ -61,11 +100,13 @@
       <br>
       <p class="text-center">Copyright <span>&#169;</span>  2022 Rousse Bidon</p>
     </footer>
-      <button class="scroll-up" id="btnScrollToUp">
-        <i class="material-icons md-48" style=' margin-top: 20%;'>
-          arrow_upward
-        </i>
-      </button>
+       <!-- ===================== SCROLL UP Button ================ -->
+  <!-- /* hide the button to show icon when scrolling */ -->
+        <button id="btnScrollToUp" title="Scroll to top">
+          <i class="fa-solid fa-arrow-up fa-lg"></i>
+        </button>
+    <!--Scroll Up button js  -->
+    <script type="text/javascript" src="./resources/js/scrollupbtn.js"></script>
     <!-- Optional JavaScript -->
     <script type="text/javascript" src="/resources/js/script.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

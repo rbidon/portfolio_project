@@ -9,7 +9,7 @@ html, body {
     height: 100%;
     margin: 0;
     overflow-x: hidden;
-    width:100;
+    /* scroll-behavior: smooth; */
   }
 /* .header{
     width: 100%;
@@ -22,25 +22,33 @@ html, body {
     display:flex;
     justify-content:space-around;
     align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
 }
+
 .nav-links {
     /* display:flex;
     justify-content:space-around;
     width: 30%; */
      list-style-type: none;
+     /* background: #F6E1E1; */
 }
+
 .nav-links .nav-item{
     display: inline-block;
     padding: 20px 10px;
 }
 .navbar a {
     color: #000000;
+    text-decoration: none;
   }
 
 
   /* logo */
   .icon {
-height: 40px;
+    width:150px;
+    height:150px;
+}
 
   }
 /* underline style */
@@ -104,11 +112,11 @@ height: 40px;
 }
 /* ==========================Introduce section =========================*/
 .circle{
-    background-color: #e6eaf8;
+    background-color: #F6E1E1;
     border-radius:50%;
     width: 400px;
     height: 400px; 
-    position: relative;
+    margin:auto;
 }
 /* .circle1 {
     background-color: #e6eaf8;
@@ -157,9 +165,10 @@ height: 40px;
     position: relative;
     line-height:0;
 } */
-
+.introduce-section{
+    height: auto;
+}
 .introduce-part {
-    position: static;
     text-align: center;
     font-size: 28px;
     font-family: "Helvetica Neue",nimbus,sans-serif;
@@ -169,28 +178,49 @@ height: 40px;
     padding: 17px;
     text-transform: none;
     background-color: transparent;
+    margin-top: 160px;
+
    
 }
-/* .intro-heading {
-    
+.intro-heading {
+   margin-bottom: -275px; 
 
-} */
+}
 .learnmore{
+    /* text-align: right;
+    margin-bottom: 31px; */
     text-align: right;
-    margin-bottom: 15px;
+    margin-bottom: 31px;
+    margin-left: -422px;
+    margin-top: -96px; 
+}
+
+a:focus {
+    outline: none !important;
 }
 
 #learn-morebutton{   
 background-color:#DEB3B3;
 border-radius: 20px;
-
+/* width: 136px; */
+}
+#learn-morebutton:link{
+text-decoration: none;
 }
 
 #learn-morebutton:hover{
-background-color: rgb(147, 38, 38);
+background-color: #F6E1E1;
+color:black;
 }
-
-
+@media  screen and (max-width:765px){
+    .circle{
+        background-color: #F6E1E1;
+        border-radius:50%;
+        width: 300px;
+        height: 300px; 
+        margin:auto;
+    }  
+}
 /* ============================PROJECTS===================================== */
 /* Project-section */
 .portifolo-section {
@@ -292,10 +322,11 @@ letter-spacing: 3px;
    /* ============================Card Style===================================== */
 .card{
     flex:50;
-    border-radius: -200px;
     /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-    border-radius: 2.25rem;
+    border-top-left-radius: 30px; 
+     border-top-right-radius: 30px;
+    
 }
 .card-body{
     background-color: transparent;
@@ -303,7 +334,7 @@ letter-spacing: 3px;
 .portifolo_demo_image{
     width:auto;
     height:auto;
-    border-radius:20px;
+    /* border-radius: 2.25rem; */
 }
 
 .portifolo_data{
@@ -324,12 +355,14 @@ letter-spacing: 3px;
     margin: 10px;
     padding: 5px;
     font-size: 12px;
+    justify-content: center;
 }
 .starter-list{
     list-style-type: none;
     /* padding:.5rem; */
-    background-color: #eef4ff;
+    background-color: #eceff5;
     border-radius: 8px;
+    
 }
 .html{
     margin: 0 16px 0 0;
@@ -353,7 +386,7 @@ letter-spacing: 3px;
 }
 .portifolo-button{
      display:flex;
-    /* justify-content:center; */
+    justify-content:center;
     align-items:center; 
     width: auto;
     height:auto;
@@ -398,7 +431,7 @@ margin-left: 10px;
 .contactme-container{
     display:flex;
     flex: 1;
-    border-radius:5px;
+    /* border-radius:20px; */
     gap: 3rem;
     justify-content: space-evenly;
     align-content: center;
@@ -406,10 +439,10 @@ margin-left: 10px;
 }
 .contact-information{
     padding: 25px 30px;
-    background-color: #bce9c6;
-    border-radius:5px;
+    background-color: #F6E1E1;
+    border-radius:30px;
     align-content:center;
-   
+    height: 261px;
 }
 
 .emailinformation {
@@ -434,6 +467,9 @@ form{
     margin-top: 20px;
 }
 
+.placeicons{
+    font-family:'Font Awesome';
+}
 .input-group{
     margin-bottom: 30px;
     position:relative;
@@ -456,26 +492,28 @@ label{
     color: #fff;
     cursor: text;
     transition: 0.2s;
+    
 }
-input:focus~label, input:valid~label, textarea:focus~label, textarea:valid~ label{
+input:focus~label, input:valid~label, textarea:focus~label, textarea:valid~label{
     top: -35px;
     font-size: 14px;
 }
 
 input:focus {
-    border: 1px solid rgb(199, 239, 168);
+    border: 1px solid #F6E1E1;
 }
 textarea:focus {
-    border: 1px solid black;
+    border: 1px solid #F6E1E1;
 }
 .row{
     display:flex;
-    align-items: center;
-    justify-content:space-evenly;
+    flex-direction: row;
+    /* align-items: center;
+    justify-content:space-around; */
     
 }
 .row .input-group{
-    flex-basis: 46%;
+    flex: 1;
 }
 
 @media screen and (max-width: 768px){
@@ -485,7 +523,7 @@ textarea:focus {
     .contactform .input-box{
         flex-direction: column;
     }
-    .input-group{
+    .row{
         flex-direction: column;
        
     }
@@ -499,7 +537,6 @@ textarea:focus {
         width:100%;
     }
 }
-
 
 /* Reset & Submit Button */
 .button-group{
@@ -538,6 +575,8 @@ justify-content: flex-start;
     position:static;    
     background-color:#F6E1E1;      
   }
+
+  /* =========================== SOCIAL MEDIA ICONS ======================================== */
   #socialmedia ul {
      /* list-style-type: none; */
      text-decoration: none;
@@ -566,8 +605,6 @@ justify-content: flex-start;
   #socialmedia ul li a {
       position:relative;
       display:block;
-
-      /* =====================================Scroll-Up Button==================================== */
       /* Where I can size the icon background */
       width:50px;
       height:50px;
@@ -578,7 +615,6 @@ justify-content: flex-start;
       box-shadow: 0 5px 4px rgb(160, 128, 128);
     /* Possible box shadow color */
       /* background-color: #F6E1E1; */
-
   }
 
   /* Hovering w. Social Media */
@@ -616,22 +652,22 @@ justify-content: flex-start;
       color: #000000;
   }
 
-
+/* ===================== SCROLL UP BUTTON ===================================== */
   /* Scroll Up Icon */
   #btnScrollToUp{
+       /* hide the button to show icon when scrolling */
+      display:none;
       background-color: #fbfbfb;
       border-radius: 50%;
       position: fixed;
       right:20px;
       bottom: 20px;
-      width:50px;
-      height:50px;
+      width:40px;
+      height:40px;
       box-shadow: 0 5px 4px rgb(160, 128, 128);
       outline: none;
       cursor: pointer;
-      border:none; 
-       /* hide the button to show icon when scrolling */
-       display:none;
+      border:none;  
   }
   
   /* Change color when click on it */
@@ -642,3 +678,107 @@ justify-content: flex-start;
   /* #btnScrollToUp:hover{
       background-color: #FBFFF1;
   } */
+
+
+
+  /* ====================== ABOUT ME PAGE============================== */
+  .cicle-square{
+      display:flex;
+      gap: 4em;
+      justify-content:center;
+      /* flex-direction: row; */
+      margin:auto;
+  }
+  .square{
+      background-color: #C4C4C4;
+    width: 400px;
+    height: 400px;
+    /* margin:auto; */
+    border: 1px dotted black;
+  }
+  .about-square{
+      text-align: center;
+      padding:15px;
+  }
+  .circle-photo{
+    background-color: #F6E1E1;
+    border-radius:50%;
+    width: 400px;
+    height: 400px; 
+  }
+  .resume{
+      margin-top: 20px;
+      margin-bottom:15px;
+      text-align: center;
+      margin-left: auto;
+  }
+#resume-button{   
+    background-color:#F6E1E1;
+    border-radius: 20px;
+    width: 160px;
+    }
+    #resume-button:link{
+    text-decoration: none;
+    }
+    
+    #resume-button:hover{
+    background-color: #f9cfcf;
+    color:black;
+    }
+
+    /* Skills Section */
+    .skills-section{
+    margin-top: 40px;
+    background-color: #F6E1E1;
+    width:100%;
+    height:auto;
+    margin: 0px;
+    padding:0;
+    box-sizing: border-box; 
+    }
+    .skills{
+        margin-top: 15px;
+        padding-top:20px;
+        font-size: 40px;
+        font-family: 'Questrial', sans-serif;
+       text-align:center;
+    }
+    .skills-icons{
+        display:flex;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 30px;
+    }
+    .sicons{
+        width:100px;
+        height:100px;
+    }
+
+    @media screen and (max-width: 892px){
+       .skills-icons{
+           /* flex-direction: column; */
+           flex-wrap: wrap;
+        }
+        .cicle-square{
+            flex-direction: column;
+            justify-content: center;
+            /* align-content: center; */
+            align-items: center;
+        }
+        .square{
+            /* justify-items: center; */
+            margin-bottom: 20px;
+            padding-right: 15px;
+            padding-left: 15px;
+            /* margin-right: auto;
+            margin-left: auto; */
+        }
+        .about-square{
+            flex-wrap:wrap;
+        }
+        .circle-photo{
+            width:400px;
+            height:400px;
+        }
+    }
