@@ -3,7 +3,7 @@
   <head>
     <title>Rousse Bidon</title>
     <!-- page icon/tab icon -->
-    <link rel="icon" type="image/jpg" href="#">
+    <link rel="icon" type="image/png" sizes="32x32" href="./resources/images/RB title icon.png">
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -31,8 +31,10 @@
       <!-- Navbar section -->
       <nav class="navbar">
         <div class="logo">
-          <a class="icon nav-links" style=" text-underline-offset: 0.2em;
-          text-decoration:underline 0.15em rgb(0,0,0,0); color:#000000; text-decoration-color: rgb(0, 0, 0);" href="./index.html">Rousse B.</a>
+            <a class="icon nav-links" href="./index.html"><img class="icon" src="./resources/images/Logo.png"></a>
+          <!-- other logo idea -->
+          <!-- <a class="icon nav-links" style=" text-underline-offset: 0.2em;
+          text-decoration:underline 0.15em rgb(0,0,0,0); color:#000000; text-decoration-color: rgb(0, 0, 0);" href="./index.html">Rousse B.</a> -->
         </div>
         <ul class ="nav-links" id="navLink">
           <li class="nav-item">
@@ -61,14 +63,14 @@
       <section class="introduce-section "> 
       <div class="container aboutme">
         <div class="introduce-part">
-          <h2 class="intro-heading" >Hi, I'm <span style="color:#800f2f;">Rousse.</span> <br> I am a <span style="color:rgba(255, 153, 0, 0.596)">front-end developer & ux designer </span> based in fort lauderdale, florida with a passionate for accessibility and creating usable digital products. </h2>
+          <h2 class="intro-heading" >Hi, I'm <span style="color:#800f2f; ">Rousse.</span> <br> I am a <span style="color:#800f2f;">front-end developer & ux designer </span> based in fort lauderdale, florida with a passionate for accessibility and creating usable digital products. </h2>
           <div class="circle"></div>
            
         </div>
-        <div class="circle1"></div>
+        <!-- <div class="circle1"></div>
         <div class="circle2"></div>
         <div class="circle3"></div>
-        <div class="circle4"></div>
+        <div class="circle4"></div> -->
 
         <div class="learnmore">
           <a href="./aboutme.html" class="btn"id="learn-morebutton" role="button">Learn More</a>
@@ -136,7 +138,7 @@
                <div class="card" style="border-radius: 2.25rem;">
                 <img class="card-img-top portifolo_demo_image" src="./resources/images/To Do List homepage.png" alt="Card image cap">
                 <div class="card-body">
-                  <h5 class="card-title text-center">Quote Generator</h5>
+                  <h5 class="card-title text-center">To-Do List (Group Project)</h5>
                   <h6 class="card-subtitle ">
                     <ul class="portifolo_tech-list">
                     <li class="starter-list html">HTML </li>
@@ -144,7 +146,7 @@
                     <li class="starter-list js">JavaScript</li>
                     <li class="starter-list bootstrap">Bootstrap</li>
                   </ul></h6>
-                  <p class="card-text"> Quote generator, giving you randomize quote with the author</p>
+                  <p class="card-text"> During my time in Generation USA, my team and I created a operated To-Do List. </p>
                   <div class="portifolo-button">
                     <a class="btn btn-portifolo" id="btn-portifolo" target="'_blank"  href="https://www.figma.com/file/UdOHMQPQXXgA1XDyzWiiGd/Final-Project" role="button">Design</a>
                     <a class="btn btn-portifolo" id="btn-portifolo" target="'_blank"  href="https://github.com/chrisfoose/jwdfinal" role="button">Github Link</a>
@@ -154,9 +156,9 @@
               </div>
             <!-- Project 4 Card -->
             <div class="card" style="border-radius: 2.25rem;">
-              <img class="card-img-top portifolo_demo_image" src="./resources/images/To Do List homepage.png" alt="Card image cap">
+              <img class="card-img-top portifolo_demo_image" src="./resources/images/Portifiolo Page.png" alt="Card image cap">
               <div class="card-body">
-                <h5 class="card-title text-center">Personal Portifolo</h5>
+                <h5 class="card-title text-center">Personal Portfolio</h5>
                 <h6 class="card-subtitle ">
                   <ul class="portifolo_tech-list">
                   <li class="starter-list html">HTML </li>
@@ -164,7 +166,7 @@
                   <li class="starter-list js">JavaScript</li>
                   <li class="starter-list bootstrap">Bootstrap</li>
                 </ul></h6>
-                <p class="card-text"> Personal Profiolo</p>
+                <p class="card-text"> Personal Portfolio</p>
                 <div class="portifolo-button">
                   <a class="btn btn-portifolo" id="btn-portifolo" target="'_blank"  href="https://www.figma.com/file/jz3YeBL3LAkdh2wdrdFFuD/Portifolo" role="button">Design</a>
                   <a class="btn btn-portifolo" id="btn-portifolo" target="'_blank"  href="https://github.com/rbidon/portfolio_project" role="button">Github Link</a>
@@ -271,10 +273,12 @@
       <br>
       <p class="text-center">Copyright <span>&#169;</span>  2022 Rousse Bidon</p>
   </footer>
-  
+  <!-- Scroll Button  -->
   <button id="btnScrollToUp" title="Scroll to top">
     <i class="fa-solid fa-arrow-up fa-lg"></i>
   </button>
+      <!--Scroll Up button js  -->
+      <script type="text/javascript" src="./resources/js/scrollupbtn.js"></script>
   <!-- JS link -->
   <script src="./resources/js/script.js" ></script>
     <!-- Optional JavaScript -->
