@@ -113,7 +113,7 @@ html, body {
     border-radius:50%;
     width: 400px;
     height: 400px; 
-    margin:auto;
+    margin: 0 auto;
 }
 /* .circle1 {
     background-color: #e6eaf8;
@@ -213,11 +213,17 @@ color:black;
     .circle{
         background-color: #F6E1E1;
         border-radius:50%;
-        width: 350px;
-        height: 350px; 
-        
-    }  
-}
+        width: 330px;
+        height: 330px; 
+        margin: 0 auto;
+        margin-bottom: 50px;
+        /* margin-left: -13px; */
+    }
+
+    .intro-heading{
+        font-size: 25px;
+    }
+ }  
 /* ============================PROJECTS===================================== */
 /* Project-section */
 .portifolo-section {
@@ -229,11 +235,11 @@ color:black;
     padding:0;
     box-sizing: border-box;
 }
-@media only screen and (min-width: 750px){
+/* @media only screen and (min-width: 750px){
     .portifolo-section{
         max-height:2400px;
     }
-}
+} */
 .projects-title{
     text-align: center;
     padding-top: 15px;
@@ -328,6 +334,9 @@ letter-spacing: 3px;
 .card-body{
     background-color: transparent;
 }
+.card-text{
+    font-size:15px;
+}
 .portifolo_demo_image{
     width:auto;
     height:auto;
@@ -421,8 +430,9 @@ margin-left: 10px;
     text-align: center;
     /* box-shadow: 1px 3px 0px; */
     padding-top: 15px;
+    /* margin: 30px; */
     font-size: 40px;
-    font-family: 'Questrial', sans-serif;
+    /* font-family: 'Questrial', sans-serif; */
    
 }
 .contactme-container{
@@ -687,21 +697,26 @@ justify-content: flex-start;
       margin:auto;
   }
   .square{
-      background-color: #C4C4C4;
-    width: 400px;
-    height: 400px;
-    /* margin:auto; */
+      /* background-color: #C4C4C4; */
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
     border: 1px dotted black;
+    margin-bottom: 40px;
+    /* padding:20px; */
   }
   .about-square{
       text-align: center;
       padding:15px;
   }
+  .aboutpara{
+      padding:15px;
+  }
   .circle-photo{
     background-color: #F6E1E1;
     border-radius:50%;
-    width: 400px;
-    height: 400px; 
+    width: 450px;
+    height: 450px; 
   }
   .resume{
       margin-top: 20px;
@@ -712,7 +727,7 @@ justify-content: flex-start;
 #resume-button{   
     background-color:#DEB3B3;
     border-radius: 20px;
-    width: 160px;
+    width: 180px;
     }
     #resume-button:link{
     text-decoration: none;
@@ -752,7 +767,7 @@ justify-content: flex-start;
         height:100px;
     }
 
-    @media screen and (max-width: 892px){
+    @media screen and (max-width:940px){
        .skills-icons{
            /* flex-direction: column; */
            flex-wrap: wrap;
@@ -764,18 +779,35 @@ justify-content: flex-start;
             align-items: center;
         }
         .square{
-            /* justify-items: center; */
-            margin-bottom: 20px;
+            justify-items: center;
+            margin-bottom: 40px;
             padding-right: 15px;
             padding-left: 15px;
-            /* margin-right: auto;
+            margin: 0 auto;
+            /* /* margin-right: auto;
             margin-left: auto; */
+            width: 100%;
         }
         .about-square{
             flex-wrap:wrap;
         }
         .circle-photo{
-            width:400px;
-            height:400px;
+            width:350px;
+            height:350px;
+            
         }
+    }
+
+
+    /* =========================OTHER FUN SECTION====================== */
+
+    .otherfun{
+        background-color:#F6E1E1;
+        text-align: center;
+        /* padding: 5px; */
+        height: auto;
+    }
+    .otherpara{
+        padding: 5px;
+        margin:16px;
     }
