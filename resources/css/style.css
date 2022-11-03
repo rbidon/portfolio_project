@@ -413,6 +413,10 @@ width:150px;
 margin-bottom: 15px;
 margin-left: 10px;
 }
+#btn-portifolo:hover{
+    background-color: #F6E1E1;
+    color:black;
+    }
 .circleicon{
     padding:8px;
 }
@@ -689,6 +693,16 @@ justify-content: flex-start;
 
 
   /* ====================== ABOUT ME PAGE============================== */
+  .photo{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    /* margin: 51px; */
+    padding: 30px;
+    position: relative;
+    margin-right: 20px;
+  }
   .cicle-square{
       display:flex;
       gap: 4em;
@@ -768,6 +782,10 @@ justify-content: flex-start;
     }
 
     @media screen and (max-width:940px){
+        .imgMe{
+            width:350px;
+            height:350px;               
+        }
        .skills-icons{
            /* flex-direction: column; */
            flex-wrap: wrap;
