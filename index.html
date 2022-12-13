@@ -64,7 +64,7 @@
       <div class="container aboutme">
         <div class="introduce-part">
           <h2 class="intro-heading" >
-            Hi, I'm <span style="color:#800f2f; ">Rousse.</span> <br> I am a <span style="color:#800f2f;">full-stack developer</span> based in fort lauderdale, florida with a passionate for accessibility and creating usable digital products. </h2>
+            Hi, I'm <span style="color:#800f2f; ">Rousse.</span> <br> a <span style="color:#800f2f;">full-stack developer</span> based in fort lauderdale, florida with a passionate for accessibility and creating usable digital products. </h2>
           <div class="circle"></div>
            
         </div>
@@ -90,15 +90,77 @@
        <div class="wrapper">
          <div class="buttonWrapper" id="buttonWrapper">
            <button class="tab-button active" style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;" data-id="frontend">Applications</button>
-           <!-- disabled the UX Design button -->
+           <!-- disabled the UX Wireframe button -->
         <button class="tab-button" data-id="miniProject" style="border-top-right-radius: 10px; border-bottom-right-radius: 10px;">Mini Projects</button>
 
-        <button class="tab-button" data-id="uxdesign" style="border-top-right-radius: 10px; border-bottom-right-radius: 10px;" disabled >UX Design (In Progress)</button>
+        <button class="tab-button" data-id="uxWireframe" style="border-top-right-radius: 10px; border-bottom-right-radius: 10px;" disabled >UX Wireframe (In Progress)</button>
          </div>
          <div class="contentWrapper">
           <!-- Will store my mini project worls -->
            <div class="content active flex-container" id="frontend">
-             <!-- Project 4 Card -->
+            <div class="contentHolder">
+            <!-- Projects from General Assembly -->
+            <div id="card" class="card" style="border-radius: 2.25rem;">
+              <img class="card-img-top portifolo_demo_image" src="./resources/images/Streamin-Screenshots.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title text-center">Streamin</h5>
+                <h6 class="card-subtitle ">
+                  <ul class="portifolo_tech-list">
+                    <li class="starter-list html">Node.js </li>
+                    <li class="starter-list css"> Express</li>
+                    <li class="starter-list js">React</li>
+                    <li class="starter-list bootstrap">Bootstrap</li>
+                    <li class="starter-list bootstrap">Mongoose</li>
+                </ul></h6>
+                <!-- <p class="card-text"> Personal Portfolio</p> -->
+                <div class="portifolo-button">
+                  <a class="btn btn-portifolo" id="btn-portifolo" target="'_blank"  href="https://www.figma.com/file/hnNus3wYFm4CGsplWfH2h3/Matchy-Game-Wireframe?node-id=0%3A1" role="button">Wireframe</a>
+                  <a class="btn btn-portifolo" id="btn-portifolo" target="'_blank"  href="https://github.com/rbidon/Matchy" role="button">Github</a>
+                  <a class="btn btn-portifolo" id="btn-portifolo" target="'_blank" href="https://rbidon.github.io/Matchy/" role="button">Deploy Website</a>
+                 </div>
+                 </div>
+              </div>
+              <div id="card" class="card" style="border-radius: 2.25rem;">
+                <img class="card-img-top portifolo_demo_image" src="./resources/images/DocMcOffice.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Doc McOffice</h5>
+                  <h6 class="card-subtitle ">
+                    <ul class="portifolo_tech-list">
+                      <li class="starter-list html">EJS </li>
+                      <li class="starter-list css"> Tailwind CSS</li>
+                      <li class="starter-list js">Express</li>
+                      <li class="starter-list bootstrap">Bootstrap</li>
+                      <li class="starter-list bootstrap">Node.js</li>
+                      <li class="starter-list bootstrap">MongoDB</li>
+                   
+                  </ul></h6>
+                  <!-- <p class="card-text"> Personal Portfolio</p> -->
+                  <div class="portifolo-button">
+                    <a class="btn btn-portifolo" id="btn-portifolo" target="'_blank"  href="https://github.com/rbidon/DocMcOffice" role="button">Github</a>
+                    <a class="btn btn-portifolo" id="btn-portifolo" target="'_blank" href="https://docmcoffice.herokuapp.com/" role="button">Deploy Website</a>
+                   </div>
+                   </div>
+                </div>
+                <div id="card" class="card" style="border-radius: 2.25rem;">
+                  <img class="card-img-top portifolo_demo_image" src="./resources/images/MatchyGame.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title text-center">Matchty Game</h5>
+                    <h6 class="card-subtitle ">
+                      <ul class="portifolo_tech-list">
+                      <li class="starter-list html">HTML </li>
+                      <li class="starter-list css"> CSS</li>
+                      <li class="starter-list js">JavaScript</li>
+                      <li class="starter-list bootstrap">Bootstrap</li>
+                    </ul></h6>
+                    <!-- <p class="card-text"> Personal Portfolio</p> -->
+                    <div class="portifolo-button">
+                      <a class="btn btn-portifolo" id="btn-portifolo" target="'_blank"  href="https://www.figma.com/file/hnNus3wYFm4CGsplWfH2h3/Matchy-Game-Wireframe?node-id=0%3A1" role="button">Wireframe</a>
+                      <a class="btn btn-portifolo" id="btn-portifolo" target="'_blank"  href="https://github.com/rbidon/Matchy" role="button">Github</a>
+                      <a class="btn btn-portifolo" id="btn-portifolo" target="'_blank" href="https://rbidon.github.io/Matchy/" role="button">Deploy Website</a>
+                     </div>
+                     </div>
+                  </div>
+             <!-- Portifolo -->
              <div id="card" class="card" style="border-radius: 2.25rem;">
               <img class="card-img-top portifolo_demo_image" src="./resources/images/Portifolo_page.png" alt="Card image cap">
               <div class="card-body">
@@ -112,17 +174,18 @@
                 </ul></h6>
                 <!-- <p class="card-text"> Personal Portfolio</p> -->
                 <div class="portifolo-button">
-                  <a class="btn btn-portifolo" id="btn-portifolo" target="'_blank"  href="https://www.figma.com/file/jz3YeBL3LAkdh2wdrdFFuD/Portifolo" role="button">Design</a>
+                  <a class="btn btn-portifolo" id="btn-portifolo" target="'_blank"  href="https://www.figma.com/file/jz3YeBL3LAkdh2wdrdFFuD/Portifolo" role="button">Wireframe</a>
                   <a class="btn btn-portifolo" id="btn-portifolo" target="'_blank"  href="https://github.com/rbidon/portfolio_project" role="button">Github</a>
-                  <a class="btn btn-portifolo" id="btn-portifolo" target="'_blank" href="https://roussevbidon.com/" role="button">Deploy Website</a>
+                  
                  </div>
                  </div>
               </div>
            
              </div>
             </div>
-            <!-- Container my uxdesign work will be  -->
-              <div class ='content' id="uxdesign">
+          </div>
+            <!-- Container my uxWireframe work will be  -->
+              <div class ='content' id="uxWireframe">
                 <!-- UX Testing -->
                 Testing
                <div>
@@ -188,7 +251,7 @@
                       </ul></h6>
                       <p class="card-text"> My team and I created a operated To-Do List. Ability to create a task, change status, mark done and delete the task.</p>
                       <div class="portifolo-button">
-                        <a class="btn btn-portifolo" id="btn-portifolo" target="'_blank"  href="https://www.figma.com/file/UdOHMQPQXXgA1XDyzWiiGd/Final-Project" role="button">Design</a>
+                        <a class="btn btn-portifolo" id="btn-portifolo" target="'_blank"  href="https://www.figma.com/file/UdOHMQPQXXgA1XDyzWiiGd/Final-Project" role="button">Wireframe</a>
                         <a class="btn btn-portifolo" id="btn-portifolo" target="'_blank"  href="https://github.com/chrisfoose/jwdfinal" role="button">Github </a>
                         <a class="btn btn-portifolo" id="btn-portifolo" target="'_blank" href="https://chrisfoose.github.io/jwdfinal/index.html" role="button">Deploy Website</a>
                        </div>
