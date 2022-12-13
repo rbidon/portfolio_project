@@ -47,7 +47,7 @@
             <a href="#contactme-section">Contact</a>
           </li>
           <li class="nav-item">
-            <a href="#">Resume</a>
+            <a href="https://drive.google.com/file/d/1vqfxUhIFhLyh2NijoUtNKaP51aYi-NED/view?usp=sharing" target="_blank">Resume</a>
           </li>
         </ul> 
         <!-- navbar icon -->
@@ -89,77 +89,17 @@
       <!-- Hold the wrapper of projects -->
        <div class="wrapper">
          <div class="buttonWrapper" id="buttonWrapper">
-           <button class="tab-button active" style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;" data-id="frontend">Full Stack</button>
+           <button class="tab-button active" style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;" data-id="frontend">Applications</button>
            <!-- disabled the UX Design button -->
+        <button class="tab-button" data-id="miniProject" style="border-top-right-radius: 10px; border-bottom-right-radius: 10px;">Mini Projects</button>
+
         <button class="tab-button" data-id="uxdesign" style="border-top-right-radius: 10px; border-bottom-right-radius: 10px;" disabled >UX Design (In Progress)</button>
          </div>
          <div class="contentWrapper">
-          <!-- Will store my project worls -->
+          <!-- Will store my mini project worls -->
            <div class="content active flex-container" id="frontend">
-             <div class="portifolo_content">  
-               <!-- Project 1 Card -->
-            <div class="card" style="border-radius: 2.25rem;">
-              <img class="card-img-top portifolo_demo_image" src="./resources/images/pw geneator.png" alt="Card image cap">
-              <!-- <img class="card-img-top portifolo_demo_image" src="./resources/images/Canva RPGPicture.png" alt="Card image cap"> -->
-              <div class="card-body">
-                <h5 class="card-title text-center">Password Generator</h5>
-                <h6 class="card-subtitle ">
-                  <ul class="portifolo_tech-list">
-                  <li class="starter-list html">HTML </li>
-                  <li class="starter-list css"> CSS</li>
-                  <li class="starter-list js">JavaScript</li>
-                  <li class="starter-list bootstrap">Bootstrap</li>
-                </ul></h6>
-                <p class="card-text">Generate randomize password up to 15 characters.</p>
-                <div class="portifolo-button">
-                  <a class="btn btn-portifolo" id="btn-portifolo" target="'_blank"  href="https://github.com/rbidon/review-project" role="button">Github </a>
-                  <a class="btn btn-portifolo" id="btn-portifolo" target="'_blank" href="https://rbidon.github.io/review-project" role="button">Deploy Website</a>
-                 </div>
-              </div>
-            </div>
-            <!-- Project 2 Card -->
-            <div class="card" style="border-radius: 2.25rem;">
-              <img class="card-img-top portifolo_demo_image" src="./resources/images/QuoteGeneator.png" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title text-center">Quote Generator</h5>
-                <h6 class="card-subtitle ">
-                  <ul class="portifolo_tech-list">
-                  <li class="starter-list html">HTML </li>
-                  <li class="starter-list css"> CSS</li>
-                  <li class="starter-list js">JavaScript</li>
-                  <!-- <li class="starter-list bootstrap"></li> -->
-                </ul></h6>
-                <p class="card-text"> Generate randomize quotes and their associated authors using JavaScript async/await with the fetch API to pull random quotes.  </p>
-                <div class="portifolo-button">
-                  <a class="btn btn-portifolo" id="btn-portifolo" target="'_blank"  href="https://github.com/rbidon/random_quote_generator" role="button">Github </a>
-                  <a class="btn btn-portifolo" id="btn-portifolo" target="'_blank" href="https://rbidon.github.io/random_quote_generator/" role="button">Deploy Website</a>
-                 </div>
-              </div>
-            </div>
-            
-            <div class="row2">
-               <!-- Project 3 Card -->
-               <div class="card" style="border-radius: 2.25rem;">
-                <img class="card-img-top portifolo_demo_image" src="./resources/images/To Do List homepage.png" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title text-center">To-Do List</h5>
-                  <h6 class="card-subtitle ">
-                    <ul class="portifolo_tech-list">
-                    <li class="starter-list html">HTML </li>
-                    <li class="starter-list css"> CSS</li>
-                    <li class="starter-list js">JavaScript</li>
-                    <li class="starter-list bootstrap">Bootstrap</li>
-                  </ul></h6>
-                  <p class="card-text"> My team and I created a operated To-Do List. Ability to create a task, change status, mark done and delete the task.</p>
-                  <div class="portifolo-button">
-                    <a class="btn btn-portifolo" id="btn-portifolo" target="'_blank"  href="https://www.figma.com/file/UdOHMQPQXXgA1XDyzWiiGd/Final-Project" role="button">Design</a>
-                    <a class="btn btn-portifolo" id="btn-portifolo" target="'_blank"  href="https://github.com/chrisfoose/jwdfinal" role="button">Github </a>
-                    <a class="btn btn-portifolo" id="btn-portifolo" target="'_blank" href="https://chrisfoose.github.io/jwdfinal/index.html" role="button">Deploy Website</a>
-                   </div>
-                </div>
-              </div>
-            <!-- Project 4 Card -->
-            <div class="card" style="border-radius: 2.25rem;">
+             <!-- Project 4 Card -->
+             <div id="card" class="card" style="border-radius: 2.25rem;">
               <img class="card-img-top portifolo_demo_image" src="./resources/images/Portifolo_page.png" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title text-center">Personal Portfolio</h5>
@@ -170,30 +110,100 @@
                   <li class="starter-list js">JavaScript</li>
                   <li class="starter-list bootstrap">Bootstrap</li>
                 </ul></h6>
-                <p class="card-text"> Personal Portfolio</p>
+                <!-- <p class="card-text"> Personal Portfolio</p> -->
                 <div class="portifolo-button">
                   <a class="btn btn-portifolo" id="btn-portifolo" target="'_blank"  href="https://www.figma.com/file/jz3YeBL3LAkdh2wdrdFFuD/Portifolo" role="button">Design</a>
                   <a class="btn btn-portifolo" id="btn-portifolo" target="'_blank"  href="https://github.com/rbidon/portfolio_project" role="button">Github</a>
                   <a class="btn btn-portifolo" id="btn-portifolo" target="'_blank" href="https://roussevbidon.com/" role="button">Deploy Website</a>
                  </div>
+                 </div>
               </div>
-            </div>
-            </div>
+           
              </div>
             </div>
             <!-- Container my uxdesign work will be  -->
-              <div class ='content' id="uxdesign">UX Testing
+              <div class ='content' id="uxdesign">
+                <!-- UX Testing -->
+                Testing
                <div>
              </div>
              </div>
-       </div>
-       <br>
-<!-- MINI PROJECT SECTION -->
-       <div class="miniProject section">
-       
+             <!-- MINI PROJECT SECTION/conatiner -->
+            <div class="miniProject content section" id="miniProject">
+              <div>
+                <div class="portifolo_content">  
+                  <!-- Project 1 Card -->
+                <div id="card" class="card" style="border-radius: 2.25rem;">
+                  <img class="card-img-top portifolo_demo_image" src="./resources/images/pw geneator.png" alt="Card image cap">
+                  <!-- <img class="card-img-top portifolo_demo_image" src="./resources/images/Canva RPGPicture.png" alt="Card image cap"> -->
+                  <div class="card-body">
+                    <h5 class="card-title text-center">Password Generator</h5>
+                    <h6 class="card-subtitle ">
+                      <ul class="portifolo_tech-list">
+                      <li class="starter-list html">HTML </li>
+                      <li class="starter-list css"> CSS</li>
+                      <li class="starter-list js">JavaScript</li>
+                      <li class="starter-list bootstrap">Bootstrap</li>
+                    </ul></h6>
+                    <p class="card-text">Generate randomize password up to 15 characters.</p>
+                    <div class="portifolo-button">
+                      <a class="btn btn-portifolo" id="btn-portifolo" target="'_blank"  href="https://github.com/rbidon/review-project" role="button">Github </a>
+                      <a class="btn btn-portifolo" id="btn-portifolo" target="'_blank" href="https://rbidon.github.io/review-project" role="button">Deploy Website</a>
+                     </div>
+                  </div>
+                </div>
+                <!-- Project 2 Card -->
+                <div id="card" class="card" style="border-radius: 2.25rem;">
+                  <img class="card-img-top portifolo_demo_image" src="./resources/images/QuoteGeneator.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title text-center">Quote Generator</h5>
+                    <h6 class="card-subtitle ">
+                      <ul class="portifolo_tech-list">
+                      <li class="starter-list html">HTML </li>
+                      <li class="starter-list css"> CSS</li>
+                      <li class="starter-list js">JavaScript</li>
+                      <!-- <li class="starter-list bootstrap"></li> -->
+                    </ul></h6>
+                    <p class="card-text"> Generate randomize quotes and their associated authors using JavaScript async/await with the fetch API to pull random quotes.  </p>
+                    <div class="portifolo-button">
+                      <a class="btn btn-portifolo" id="btn-portifolo" target="'_blank"  href="https://github.com/rbidon/random_quote_generator" role="button">Github </a>
+                      <a class="btn btn-portifolo" id="btn-portifolo" target="'_blank" href="https://rbidon.github.io/random_quote_generator/" role="button">Deploy Website</a>
+                     </div>
+                  </div>
+                </div>
+                
+                <!-- <div class="row2"> -->
+                   <!-- Project 3 Card -->
+                   <div 
+                   id="card" class="card" style="border-radius: 2.25rem;">
+                    <img class="card-img-top portifolo_demo_image" src="./resources/images/To Do List homepage.png" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">To-Do List</h5>
+                      <h6 class="card-subtitle ">
+                        <ul class="portifolo_tech-list">
+                        <li class="starter-list html">HTML </li>
+                        <li class="starter-list css"> CSS</li>
+                        <li class="starter-list js">JavaScript</li>
+                        <li class="starter-list bootstrap">Bootstrap</li>
+                      </ul></h6>
+                      <p class="card-text"> My team and I created a operated To-Do List. Ability to create a task, change status, mark done and delete the task.</p>
+                      <div class="portifolo-button">
+                        <a class="btn btn-portifolo" id="btn-portifolo" target="'_blank"  href="https://www.figma.com/file/UdOHMQPQXXgA1XDyzWiiGd/Final-Project" role="button">Design</a>
+                        <a class="btn btn-portifolo" id="btn-portifolo" target="'_blank"  href="https://github.com/chrisfoose/jwdfinal" role="button">Github </a>
+                        <a class="btn btn-portifolo" id="btn-portifolo" target="'_blank" href="https://chrisfoose.github.io/jwdfinal/index.html" role="button">Deploy Website</a>
+                       </div>
+                    </div>
+                  <!-- </div> -->
+                
+                </div>
+                </div>
+              </div>
         <!-- <h3>Mini Project</h3> -->
 
+            </div>
        </div>
+       <br>
+
 
 
 

@@ -301,14 +301,18 @@ letter-spacing: 3px;
     gap:2rem;
     flex-direction: column;
     flex-wrap: wrap;
+    justify-content: center;
     border-radius:40px;
 }
-@media (min-width: 750px){
+@media (min-width: 911px){
 .portifolo_content{
     flex-direction: row;
 }
 }
-
+/* .active{
+    display: flex;
+    justify-content: center;
+} */
 .row2 {
     display:flex;
     gap:2rem;
@@ -328,8 +332,13 @@ letter-spacing: 3px;
     /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
     border-top-left-radius: 30px; 
-     border-top-right-radius: 30px;
+    border-top-right-radius: 30px;
+    max-width: 500px;
+    width:100%;
     
+}
+#card{
+    max-width: 500px; 
 }
 .card-body{
     background-color: transparent;
@@ -401,11 +410,11 @@ letter-spacing: 3px;
     padding: 5px;
     flex-direction: column;
 }
-@media (min-width: 768px){
+/* @media (min-width: 768px){
      .portifolo-button{
         flex-direction: row;
     }
-}
+} */
 #btn-portifolo {
 background-color:#DEB3B3;
 border-radius: 20px;
@@ -709,7 +718,25 @@ justify-content: flex-start;
       justify-content:center;
       /* flex-direction: row; */
       margin:auto;
+      /* flex-wrap: wrap; */
   }
+  .photo-resume{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+  }
+  .resume-text{
+    text-decoration:none;
+    color: black;
+  }
+  .resume-text a, 
+  .resume-text a:hover, .resume-text a:focus, .resume-text a:active, .resume-text  a:link, .resume-text a:visited{
+    text-decoration:none;
+    color:black;
+    text-decoration-line: none;
+  }
+
   .square{
       /* background-color: #C4C4C4; */
     width: 500px;
@@ -732,22 +759,33 @@ justify-content: flex-start;
     width: 450px;
     height: 450px; 
   }
+  /* .resume-holder{
+    display: flex;
+
+  } */
   .resume{
       margin-top: 20px;
       margin-bottom:15px;
       text-align: center;
       margin-left: auto;
+      cursor: pointer;
+      text-decoration: none;
   }
 #resume-button{   
     background-color:#DEB3B3;
     border-radius: 20px;
     width: 180px;
+    cursor: pointer;
     }
-    #resume-button:link{
+.resume-holder {
+    margin-top: 10px;
+    padding-top: 5px;
+}
+#resume-button:link{
     text-decoration: none;
     }
     
-    #resume-button:hover{
+#resume-button:hover{
     background-color: #f9cfcf;
     color:black;
     }
